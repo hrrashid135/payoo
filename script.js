@@ -13,6 +13,8 @@ document.getElementById('add-money').addEventListener('click', function(e) {
     document.getElementById('available-balance-amount').innerText = newBalance;
     setupCardClickHandlers('card', 'form');
 
+    
+
 });
 
 
@@ -52,24 +54,45 @@ document.getElementById('pay-now-btn-id').addEventListener('click', function(e) 
 
 // toggling feature 
 function toggle(id){
-    // STEP 1: Get all elements with class 'form' (returns a collection)
+    // STEP 1: Hide the Latest Payment section when any card is clicked
+    const latestPaymentSection = document.getElementById('latest-payment-section');
+    if(latestPaymentSection) {
+        latestPaymentSection.style.display = 'none';
+    }
+    
+    // STEP 2: Get all elements with class 'form' (returns a collection)
     const allForms = document.getElementsByClassName('form');
     
-    // STEP 2: Loop through each form and hide it
+    // STEP 3: Loop through each form and hide it
     for(let form of allForms) {
         form.style.display = 'none';
     }
     
-    // STEP 3: Show only the target form
+    // STEP 4: Show only the target form
     const targetForm = document.getElementById(id);
     if(targetForm) {  // Safety check: only if element exists
         targetForm.style.display = 'block';
     }
 }
 
+function makeActive(cardId) {
+    // STEP 1: Get all elements with class 'card' (returns a collection)
+    const allCards = document.getElementsByClassName('card');
+   // STEP 2: Loop through each card and remove the 'active' class
+   for(let card of allCards) {
+       card.classList.remove('active');
+   }
+   // STEP 3: Add the 'active' class to the clicked card
+   const activeCard = document.getElementById(cardId);
+   if(activeCard) {  // Safety check: only if element exists
+       activeCard.classList.add('active');
+   }
+}
+
 //Add money card click
 document.getElementById('add-money-id').addEventListener('click', function() {
     toggle('add-money');
+
 });
 
 //add money card click
