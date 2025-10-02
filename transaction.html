@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="flex justify-between items-center px-2 md:px-20 bg-white md:w-[90%] md:mx-auto md:text-2xl">
+        <div class="left flex gap-2 md:gap-4 items-center">
+            <img src="assets/Group.png" alt="">
+            <div>
+                <p id="available-balance">$45000</p>
+                <p>Available Balance</p>
+            </div>
+        </div>
+        <div class="right flex gap-2 md:gap-4 items-center border border-gray-100 p-1 md:p-4 rounded-md">
+            <i class="fa-solid fa-arrow-right-from-bracket -rotate-180"></i>
+            
+            <p class="md:text-3xl text-[#08080880]">Logout</p>
+        </div>
+    </header>
+
+    <section class="p-4 md:p-10 space-y-4 md:text-center ">
+        <h1 class="text-3xl md:text-5xl font-bold">🔥 Welcome to Payooo!</h1>
+        <p class="text-[#08080880] md:text-3xl">
+            Enjoy easy and convenient financial services with us. Cashout charge is low and 
+        </p>
+    </section>
+    <section class="cards-container grid grid-cols-3 grid-rows-2 gap-2 md:gap-5 p-2 md:p-4 md:mx-32">
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg  border border-gray-200 shadow-md">
+            <img src="assets/wallet1.png" alt="">
+            <p class="text-center">Add Money</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg  border border-gray-200 shadow-md">
+            <img src="assets/send1.png" alt="">
+            <p class="text-center">Cash Out</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/send1.png" alt="">
+            <p class="text-center">Cash Out</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Get Bonus</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Paybill</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Transactions</p>
+        </div>
+
+    </section>
+
+
+    <section class="bg-[#F4F5F7] md:w-[74vw] mx-auto">
+        <div class="flex justify-between mx-2 md:mx-8 md:p-8 ">
+            <h2 class="text-xl font-bold">Latest Payment</h2>
+            <p class="text-[#08080880] text-xl">View All</p>
+        </div>
+        <div class=" payment-history-container grid col-span-1 md:col-span-2 w-full gap-2 md:gap-10 p-2 md:p-10 bg-white">
+
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Electricity Bill</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Bank Deposit</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Gas Bill</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Mobile Recharge</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+            
+
+        </div>
+
+    </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

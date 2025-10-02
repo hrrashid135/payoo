@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <header class="flex justify-between items-center px-2 md:px-20 bg-white md:w-[90%] md:mx-auto md:text-2xl">
+        <div class="left flex gap-2 md:gap-4 items-center">
+            <img src="assets/Group.png" alt="">
+            <div>
+                <p id="available-balance">$45000</p>
+                <p>Available Balance</p>
+            </div>
+        </div>
+        <div class="right flex gap-2 md:gap-4 items-center border border-gray-100 p-1 md:p-4 rounded-md">
+            <i class="fa-solid fa-arrow-right-from-bracket -rotate-180"></i>
+            
+            <p class="md:text-3xl text-[#08080880]">Logout</p>
+        </div>
+    </header>
+
+    <section class="p-4 md:p-10 space-y-4 md:text-center ">
+        <h1 class="text-3xl md:text-5xl font-bold">🔥 Welcome to Payooo!</h1>
+        <p class="text-[#08080880] md:text-3xl">
+            Enjoy easy and convenient financial services with us. Cashout charge is low and 
+        </p>
+    </section>
+    <section class="cards-container grid grid-cols-3 grid-rows-2 gap-2 md:gap-5 p-2 md:p-4 md:mx-32">
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg  border border-gray-200 shadow-md">
+            <img src="assets/wallet1.png" alt="">
+            <p class="text-center">Add Money</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg  border border-gray-200 shadow-md">
+            <img src="assets/send1.png" alt="">
+            <p class="text-center">Cash Out</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/send1.png" alt="">
+            <p class="text-center">Cash Out</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Get Bonus</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Paybill</p>
+        </div>
+        <div class="add-money flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Transactions</p>
+        </div>
+
+    </section>
+
+      <section class="cash-out m-2 ">
+        <h1 class=" md:text-center text-xl md:text-4xl font-semibold">Get bonus</h1>
+        <form action="" class="flex flex-col gap-2 md:gap-8 p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto md:min-w-[50%]">
+            
+           
+
+            <label for="Agent-number" class="text-lg md:text-3xl font-normal">Enter Bonus Coupon</label>
+            <input type="text" id="agent-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter your coupon" required>
+
+
+            
+
+            <button class="get-bonus-btn bg-[#0874F2] rounded-full p-3 text-white md:text-3xl font-normal">Get Bonus</button>
+
+
+
+        </form>
+    </section>
+
+    
+</body>
+</html>
