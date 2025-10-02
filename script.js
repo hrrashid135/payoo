@@ -95,7 +95,7 @@ document.getElementById('add-money-id').addEventListener('click', function() {
 
 });
 
-//add money card click
+//cash out money card click
 document.getElementById('cash-out-id').addEventListener('click', function() {
     toggle('cash-out-form');
 });
@@ -108,4 +108,13 @@ document.getElementById('transfer-id').addEventListener('click', function() {
 //pay bill card click
 document.getElementById('pay-bill-id').addEventListener('click', function() {
     toggle('pay-bill-form'); // Changed to use unique form ID
+});
+//get bonus card click
+document.getElementById('get-bonus-id').addEventListener('click', function() {
+    alert('No Bonus Available, you gorib!');
+});
+
+//transaction card click  
+document.getElementById('transaction-id').addEventListener('click', function() {
+    alert('Transaction feature coming soon!');
 });
