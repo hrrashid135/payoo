@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="flex justify-between items-center px-2 md:px-20 bg-white md:w-[90%] md:mx-auto md:text-2xl">
+        <div class="left flex gap-2 md:gap-4 items-center">
+            <img src="assets/Group.png" alt="">
+            <div>
+                <p id="available-balance">$<span id="available-balance-amount">45000</span></p>
+                <p>Available Balance</p>
+            </div>
+        </div>
+        <div class="right flex gap-2 md:gap-4 items-center border border-gray-100 p-1 md:p-4 rounded-md">
+            <i class="fa-solid fa-arrow-right-from-bracket -rotate-180"></i>
+            
+            <p class="md:text-3xl text-[#08080880]">Logout</p>
+        </div>
+    </header>
+
+    <section class="p-4 md:p-10 space-y-4 md:text-center ">
+        <h1 class="text-3xl md:text-5xl font-bold">🔥 Welcome to Payooo!</h1>
+        <p class="text-[#08080880] md:text-3xl">
+            Enjoy easy and convenient financial services with us. Cashout charge is low and 
+        </p>
+    </section>
+    <section class="cards-container grid grid-cols-3 grid-rows-2 gap-2 md:gap-5 p-2 md:p-4 md:mx-32">
+        <div id="add-money-id" class="add-money  flex flex-col items-center justify-center gap-2 rounded-lg  border border-gray-200 shadow-md">
+            <img src="assets/wallet1.png" alt="">
+            <p class="text-center">Add Money</p>
+        </div>
+        <div id="cash-out-id" class="cash-out  flex flex-col items-center justify-center gap-2 rounded-lg  border border-gray-200 shadow-md">
+            <img src="assets/send1.png" alt="">
+            <p class="text-center">Cash Out</p>
+        </div>
+        <div id="transfer-id" class="transfer  flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/send1.png" alt="">
+            <p class="text-center">Transfer Money</p>
+        </div>
+        <div id="get-bonus-id" class="get-bonus  flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Get Bonus</p>
+        </div>
+        <div id="pay-bill-id" class="pay-bill  flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p id="pay-bill-btn" class="text-center">Paybill</p>
+        </div>
+        <div id="transaction-id" class="transaction  flex flex-col items-center justify-center gap-2 rounded-lg p-2 border border-gray-200 shadow-md">
+            <img src="assets/bonus1.png" alt="">
+            <p class="text-center">Transactions</p>
+        </div>
+
+    </section>
+
+
+    <section class="bg-[#F4F5F7] md:w-[74vw] mx-auto">
+        <div class="flex justify-between mx-2 md:mx-8 md:p-8 ">
+            <h2 class="text-xl font-bold">Latest Payment</h2>
+            <p class="text-[#08080880] text-xl">View All</p>
+        </div>
+        <div class=" payment-history-container grid col-span-1 md:col-span-2 w-full gap-2 md:gap-10 p-2 md:p-10 bg-white">
+
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Electricity Bill</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Bank Deposit</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Gas Bill</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+        <div class="card-1 flex justify-between items-center p-2 md:p-4 bg-white rounded-lg shadow-md">
+            <div class="left flex gap-4">
+                <div class="left rounded-full bg-[#0808080D] w-[45px] h-[45px] flex items-center justify-center">
+                <img src="assets/wallet1.png" alt="">
+
+                </div>
+                <div class="right">
+                <h2 class="font-bold">Mobile Recharge</h2>
+                <p class="text-[#08080880]">Today 01:44 AM</p>
+                 </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+        </div>
+            
+
+        </div>
+
+    </section>
+
+    
+    <section id="add-money" class="form add-money m-2 ">
+        <h1 class=" md:text-center text-xl md:text-4xl font-semibold">Add money</h1>
+        <form action="" class="flex flex-col gap-2 md:gap-8 p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto md:min-w-[50%]">
+            <label for="bank-select" class="text-lg md:text-3xl font-normal">Select A Bank</label>
+            <select name="Select a Bank" id="bank-select" class="text-sm rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal">
+                <option value="bank1">Islami Bank</option>
+                <option value="bank2">Standard Chartered</option>
+                <option value="bank3">Brack</option>
+                <option value="bank4">Dutch Bangla Bank</option>
+            </select>
+
+            <label for="bank Account Number" class="text-lg md:text-3xl font-normal">Bank Account Number</label>
+            <input type="text" id="bank-account-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter 11 digit account number" required>
+
+
+            <label for="amount-to-add" class="text-lg md:text-3xl font-normal">Amount to Add</label>
+            <input type="text" id="amount-to-add" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter amount to add" required>
+
+            <label for="pin-number" class="text-lg md:text-3xl font-normal">Pin number</label>
+            <input type="text" id="pin-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter pin number" required>
+
+            <button class="add-money-btn bg-[#0874F2] rounded-full p-3 text-white md:text-3xl font-normal">Add money</button>
+
+
+
+        </form>
+    </section>
+
+     <section id="cash-out-form" class="form   m-2 ">
+        <h1 class=" md:text-center text-xl md:text-4xl font-semibold">Cash Out</h1>
+        <form action="" class="flex flex-col gap-2 md:gap-8 p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto md:min-w-[50%]">
+            
+           
+
+            <label for="Agent-number" class="text-lg md:text-3xl font-normal">Agent Number</label>
+            <input type="text" id="agent-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter 11 digit number" required>
+
+
+            <label id="amount-to-cash-out" for="amount-to-cashout" class="text-lg md:text-3xl font-normal">Amount</label>
+            <input type="text" id="amount-to-cashout" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter amount to cash out" required>
+
+            <label for="pin-number" class="text-lg md:text-3xl font-normal">Pin number</label>
+            <input type="text" id="pin-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter pin number" required>
+
+            <button id="cash-out" class="cash-out-btn bg-[#0874F2] rounded-full p-3 text-white md:text-3xl font-normal">Cash Out</button>
+
+
+
+        </form>
+    </section>
+
+      <section id="transfer-money" class="form transfer-money m-2 ">
+        <h1 class=" md:text-center text-xl md:text-4xl font-semibold">Transfer money</h1>
+        <form action="" class="flex flex-col gap-2 md:gap-8 p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto md:min-w-[50%]">
+            
+           
+
+            <label for="Agent-number" class="text-lg md:text-3xl font-normal">User Acc numnber</label>
+            <input type="text" id="agent-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter 11 digit number" required>
+
+
+            <label for="amount-to-cashout" class="text-lg md:text-3xl font-normal">Amount</label>
+            <input type="text" id="amount-to-cash-out" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter amount to pay out" required>
+
+            <label for="pin-number" class="text-lg md:text-3xl font-normal">Pin number</label>
+            <input type="text" id="pin-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter pin number" required>
+
+            <button id="pay-bill" class="pay-bill-btn bg-[#0874F2] rounded-full p-3 text-white md:text-3xl font-normal">Pay Bill</button>
+
+
+
+        </form>
+    </section>
+
+     <section id="get-bonus" class="form get-bonus m-2 ">
+        <h1 class=" md:text-center text-xl md:text-4xl font-semibold">Get bonus</h1>
+        <form action="" class="flex flex-col gap-2 md:gap-8 p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto md:min-w-[50%]">
+            
+           
+
+            <label for="Agent-number" class="text-lg md:text-3xl font-normal">Enter Bonus Coupon</label>
+            <input type="text" id="agent-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter your coupon" required>
+
+
+            
+
+            <button class="get-bonus-btn bg-[#0874F2] rounded-full p-3 text-white md:text-3xl font-normal">Get Bonus</button>
+
+
+
+        </form>
+    </section>
+    <section id="pay-bill-form" class=" form  m-2 ">
+        <h1 class=" md:text-center text-xl md:text-4xl font-semibold">Pay Bill</h1>
+        <form action="" class="flex flex-col gap-2 md:gap-8 p-4 sm:p-6 lg:p-8 bg-white rounded-lg shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto md:min-w-[50%]">
+            <label for="bank-select" class="text-lg md:text-3xl font-normal">Select to pay</label>
+            <select name="Select a Bank" id="bank-select" class="text-sm rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal">
+                <option value="bank1">Islami Bank</option>
+                <option value="bank2">Standard Chartered</option>
+                <option value="bank3">Brack</option>
+                <option value="bank4">Dutch Bangla Bank</option>
+            </select>
+
+            <label for="Bank Account Number" class="text-lg md:text-3xl font-normal">Biller Account Number</label>
+            <input type="text" id="bank-account-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter 11 digit account number" required>
+
+
+            <label for="amount-to-pay-for" class="text-lg md:text-3xl font-normal">Amount to Pay</label>
+            <input type="text" id="amount-to-pay" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter amount to pay" required>
+
+            <label for="pin-number" class="text-lg md:text-3xl font-normal">Pin number</label>
+            <input type="text" id="pin-number" class="text-sm  rounded-full bg-[#F4F5F7] border-none md:p-3 p-3 text-[#08080880] md:text-3xl font-normal" placeholder="Enter pin number" required>
+
+            <button id="pay-now-btn-id" class="pay-now-btn bg-[#0874F2] rounded-full p-3 text-white md:text-3xl font-normal">Pay Now</button>
+
+
+
+        </form>
+    </section>
+
+
+    
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
